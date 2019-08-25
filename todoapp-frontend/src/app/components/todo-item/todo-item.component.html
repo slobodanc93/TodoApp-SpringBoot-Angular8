@@ -1,0 +1,16 @@
+<div class="item-container"  >
+
+    <mat-checkbox
+        [(ngModel)]="todo.completed"
+        (change)="onToggle(todo)">
+    </mat-checkbox>
+
+    <span class="item-label pl-5" [ngClass]="setClasses()">{{ todo.title }}</span>
+
+    <button 
+        mat-icon-button class="delete-button"
+        (click)="onDelete(todo)">
+        <i class="fas fa-trash fa-lg"></i>
+    </button>
+
+</div>

@@ -1,0 +1,38 @@
+.is-completed {
+    text-decoration: line-through grey;
+    color: #76bd1d !important;
+}
+
+.item-container {
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    transition: 350ms ease-in-out;
+}
+
+.item-label {
+    color: #ffbb6e;
+    font-size: 22px;
+    font-weight: 200;
+}
+
+.delete-button {
+    float: right;
+}
+
+::ng-deep .mat-checkbox .mat-checkbox-frame {
+    border-color: grey;
+    border-radius: 10%
+  }
+  
+::ng-deep .mat-checkbox-checked .mat-checkbox-background {
+    background-color:#6db33f !important;
+}
+
+::ng-deep .mat-checkbox-inner-container {
+    height: 25px !important;
+    width: 25px !important;
+  }
